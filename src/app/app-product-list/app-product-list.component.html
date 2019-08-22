@@ -1,0 +1,4 @@
+<h2 class="ml-2">Products</h2>
+<div *ngFor="let product of productList">
+    <app-app-product-item [product]="product" (shareEvent)="shareEvent($event)"></app-app-product-item>
+</div>
